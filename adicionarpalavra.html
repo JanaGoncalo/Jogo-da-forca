@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo da Forca</title><link rel="icon" 
+    type="icon" 
+    href="./img/logo.png" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="adicionarpalavra.css" />
+  </head>
+  <body>
+    <form action="" id="formulario" name="formulario">
+    <div class="content" name="content">
+      <div class="logo"></div>
+      <textarea type="text" id="palavranova" name="palavranova" class="palavranova" minlength="3" maxlength="8" placeholder="Digite uma palavra ou frase"  required></textarea>
+      <p class="rule"><i class="fa-solid fa-circle-exclamation exclamation" required ></i></i>Max. de 8 letras</p>
+      <div class="buttons">
+        <button onClick="validar()" class="salvar" > Salvar</button>
+        <button class="cancelar" >Voltar</button>
+      </div>
+    </div>
+  </form>
+
+    <footer class="footer">
+      <a href="https://github.com/JanaGoncalo" target="_blank"><img src="img/github.png" alt="GitHub"></a><p class="corpyright">Desenvolvido por Janaína Gonçalo</p><a href="https://linkedin.com/in/janagoncalo/" target="_blank"><img src="img/linkedin.png" alt="Linkedin"></a>
+</footer>   
+
+    <script src="https://kit.fontawesome.com/3e6df3b49c.js" crossorigin="anonymous"></script>
+    <script src="adicionarpalavra.js"></script>
+  </body>
+</html>

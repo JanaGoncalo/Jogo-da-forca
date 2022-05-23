@@ -1,0 +1,287 @@
+@viewport {
+	zoom:  1.0;
+	width: extend-to-zoom;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	background: linear-gradient(to right, #c33764, #431d71);
+	margin: 0;
+	padding: 0;	
+	font-family: 'Roboto', sans-serif;
+
+}
+
+body {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
+	height: 100vh;
+	max-height: 100vh;
+}
+
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	height: 80%;
+}
+
+canvas {
+	color: #000000;
+	margin: 0 auto;
+	max-width: 210px;
+	max-height: 240px;
+	width: 80%;
+}
+
+img {
+	margin: 0 45px;
+	width: 120px;
+	height: 120px;
+}
+
+.logo {
+  height: 48px;
+  width: 32px;
+  background-image: url("img/logo.png");
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
+
+.titulo {
+	font-family: 'Amatic SC', cursive;
+	color: #000000;
+	font-size: 3rem;
+	font-weight: 400;
+	letter-spacing: 3px;
+}
+
+.linhas {
+	color: black;
+	font-size: 3rem;
+	text-transform: uppercase;
+}
+
+h2{
+	text-transform: uppercase;
+
+}
+
+@media screen and (min-width: 768px){
+	.linhas {
+		font-size: 4rem;
+	}
+}
+
+.dicas {
+	color: black;
+	font-size: 1.15rem;
+	border: 1px solid #000000;
+	border-radius: 4px;
+	margin: 0 auto;
+	padding: 0.3em;
+}
+
+.letras-incorretas {
+	color: black;
+	font-size: 1.15rem;
+	border: 1px solid #000000;
+	border-radius: 4px;
+	margin: 0 auto;
+	padding: 0.3em;
+}
+
+.mensagem-final {
+	color: black;
+	font-size: 1.5rem;
+	font-weight: 600;
+	letter-spacing: 1.2px;
+}
+
+.palavra-correta-chances {
+	font-size: 1.25rem;
+	color: black;
+}
+
+footer {
+	bottom: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
+  background: purple;
+  display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	font-size: 15px;
+	height: 12vh;
+
+	 }
+	 
+footer p {
+	margin: 0 10px;
+	 }
+	 
+footer img{
+	width: 30px;
+	height: 30px;
+	 }
+
+.iniciar-jogo {
+	background: #b300ff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 100%;
+	border: none;
+	border-radius: 20px;
+  height: 60px;
+  margin: 0 20px;
+  width: 80%;
+  cursor: pointer;
+	align-items: center;
+
+}
+
+.btn-principal {
+	background: #b300ff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 100%;
+	border: none;
+	border-radius: 20px;
+  height: 40px;
+  margin: 0 20px;
+  width: 90%;
+  cursor: pointer;
+	align-items: center;
+}
+.voltarfinal {
+	background: #670391;
+	font-family: 'Roboto', sans-serif;
+	font-size: 100%;
+	border: none;
+	border-radius: 20px;
+  height: 40px;
+  margin: 0 20px;
+  width: 90%;
+  cursor: pointer;
+	align-items: center;
+
+}
+.voltarfinal:hover,
+.voltarfinal:focus {
+	background-color: #400055;
+	color: #000000; 
+	transition: 1s;
+}
+
+.btn-principal:hover,
+.btn-principal:focus {
+	background-color: #ed00d1;
+	color: #000000; 
+	transition: 1s;
+}
+
+.adicionarpalavra {
+	background: #ff00d0;
+	font-family: 'Roboto', sans-serif;
+	border: none;
+  border-radius: 20px;
+  height: 60px;
+  margin: 0 20px;
+  width: 80%;
+  cursor: pointer;
+}
+
+
+
+.adicionarpalavra:hover,
+.adicionarpalavra:focus {
+	background-color: #b200ed;
+	color: #000000; 
+	transition: 1s;
+}
+
+.btn-letras {
+	background-color: #d20290;
+	color: rgb(0, 0, 0);
+	font-family: 'Roboto', sans-serif;
+	border: 0;
+	border-radius: 6px;
+	padding: 0.8em;
+	margin: 0.1em;
+}
+
+.btn-letras:hover,
+.btn-letras:focus {
+	background-color: #7f0691;
+	color: #000000;
+}
+
+@media screen and (min-width: 768px){
+	.btn-letras {
+		font-size: 1rem;
+	}
+
+}
+
+.btn-selected {
+	background-color: #f544e0;
+	color: #000000; 
+}
+
+/* layout */
+.tabuleiro {
+	display: none;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 100%;
+	margin: 0 auto;
+
+}
+
+.div-linhas{
+	width: 100%;	
+}
+
+.div-letras {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 auto;
+	width: 90%;
+}
+
+.overlay {
+	background-color: rgba(0, 0, 0, 0.3);
+	display: none;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+.modal {
+	background-image: url(./img/gradient.gif);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	border: 2px outset #000000;
+	border-radius: 4px;
+	height: 200px;
+	max-width: 400px;
+	margin: 0 auto;
+	padding: 1.25em;
+	position: relative;
+	top: 30%;
+}

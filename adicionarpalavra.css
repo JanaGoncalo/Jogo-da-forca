@@ -1,0 +1,139 @@
+body {
+  background: linear-gradient(to right, #c33764, #431d71);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  min-height: 464px;
+}
+
+footer {
+	bottom: 0;
+  width: 100%;
+  position: fixed;
+  background: purple;
+  display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	font-size: 15px;
+	height: 12vh;
+
+	 }
+	 
+footer p {
+	margin: 0 10px;
+	 }
+	 
+footer img{
+	width: 30px;
+	height: 30px;
+	 }
+textarea {
+  font-size: 20;
+  font-family: 'Roboto', sans-serif;
+  background: transparent;
+}
+
+.logo {
+  height: 48px;
+  width: 32px;
+  background-image: url("img/logo.png");
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
+.content {
+  height: 82vh;
+  width: 85vw;
+  max-width: 780px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.palavranova {
+  resize: none;
+  border: none;
+  width: 100%;
+  height: 60%;
+  color: black;
+  font-size: 2rem;
+  min-width: 220px;
+}
+
+.palavranova::placeholder {
+  color: black;
+  font-size: 2rem;
+}
+
+.palavranova:focus {
+  outline: none;
+}
+
+.rule, .exclamation {
+  align-self: flex-start;
+}
+
+.exclamation {
+  color: black;
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+.buttons {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  text-decoration: none;
+}
+
+.salvar,
+.cancelar {
+  border-radius: 20px;
+  height: 60px;
+  margin: 0 20px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.salvar {
+  background-color: #8a004e;
+  color: rgb(0, 0, 0);
+  border: none;
+}
+
+.salvar a {
+  color: rgb(0, 0, 0);
+}
+
+.cancelar {
+  background-color: #540090;
+  border: none;
+  color: #000000;
+}
+
+.cancelar a {
+  color: #000000;
+}
+
+@media only screen and (min-width: 525px) {
+  .buttons {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

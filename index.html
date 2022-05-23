@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo da Forca</title>
+    <link rel="icon" 
+      type="icon" 
+      href="./img/logo.png" />
+</head>
+    <link href="reset.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <main>
+      <h1 id="titulo" class="titulo">Jogo da Forca</h1>
+      <img id="stick" src="./img/stick.gif" />
+
+      <div class="content">
+        <div class="logo"></div>
+      </div>
+  
+      <button class="iniciar-jogo" id="iniciar-jogo">Iniciar jogo</button>
+      
+      <a href="adicionarpalavra.html"><button class="adicionarpalavra" id="adicionarpalavra">Adicionar palavra</button></a> 
+
+      <div id="tabuleiro" class="tabuleiro">
+        <canvas width="210" height="239"></canvas>
+        <div type="text" id="div-linhas" class="div-linhas">
+          <span class="linhas"></span>
+        </div>
+
+        <h2 id="letras-incorretas"></h2>
+        <div id="div-letras" class="div-letras">
+          <button class="btn-letras" id="0" value="a">A</button>
+          <button class="btn-letras" id="1" value="b">B</button>
+          <button class="btn-letras" id="2" value="c">C</button>
+          <button class="btn-letras" id="3" value="d">D</button>
+          <button class="btn-letras" id="4" value="e">E</button>
+          <button class="btn-letras" id="5" value="f">F</button>
+          <button class="btn-letras" id="6" value="g">G</button>
+          <button class="btn-letras" id="7" value="h">H</button>
+          <button class="btn-letras" id="8" value="i">I</button>
+          <button class="btn-letras" id="9" value="j">J</button>
+          <button class="btn-letras" id="10" value="k">K</button>
+          <button class="btn-letras" id="11" value="l">L</button>
+          <button class="btn-letras" id="12" value="m">M</button>
+          <button class="btn-letras" id="13" value="n">N</button>
+          <button class="btn-letras" id="14" value="o">O</button>
+          <button class="btn-letras" id="15" value="p">P</button>
+          <button class="btn-letras" id="16" value="q">Q</button>
+          <button class="btn-letras" id="17" value="r">R</button>
+          <button class="btn-letras" id="18" value="s">S</button>
+          <button class="btn-letras" id="19" value="t">T</button>
+          <button class="btn-letras" id="20" value="u">U</button>
+          <button class="btn-letras" id="21" value="v">V</button>
+          <button class="btn-letras" id="22" value="w">W</button>
+          <button class="btn-letras" id="23" value="x">X</button>
+          <button class="btn-letras" id="24" value="y">Y</button>
+          <button class="btn-letras" id="25" value="z">Z</button>
+        </div>
+      </div>
+
+      <div id="overlay" class="overlay">
+        <div class="modal">
+          <h2 id="mensagem-final" class="mensagem-final"></h2>
+          <p id="palavra-correta-chances" class="palavra-correta-chances"></p>
+          <button class="btn-principal" id="restart">Jogar novamente</button>
+          <button class="voltarfinal">Desistir</button>
+        </div>
+      </div>
+    </main>
+   
+    <footer class="footer">
+      <a href="https://github.com/JanaGoncalo" target="_blank"><img src="img/github.png" alt="GitHub"></a><p class="corpyright">Desenvolvido por Janaína Gonçalo</p><a href="https://linkedin.com/in/janagoncalo/" target="_blank"><img src="img/linkedin.png" alt="Linkedin"></a>
+</footer>
+    
+    <script src="canva.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
